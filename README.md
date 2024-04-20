@@ -1,3 +1,18 @@
+## Minimum PHP
+- [1] PHP 8.1
+
+## Installation Project
+
+- [1] composer install
+- [2] npm install
+- [3] composer install
+- [4] php artisan migrate
+
+
+to add data to table check folder database/seeders and run:
+- [5] php artisan db:seed
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
