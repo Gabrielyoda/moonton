@@ -15,10 +15,24 @@ use Inertia\Inertia;
 |
 */
 
-Route::redirect('/','/login');
+Route::redirect('/','/prototype/login');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::prefix('prototype')->name('prototype.')->group(function () {
+    route::get('/login', function () {
+        return Inertia::render('Prototype/Login');
+    })->name('login');
+
+    route::get('/register', function () {
+        return Inertia::render('Prototype/Register');
+    })->name('register');
+
+    route::get('/dashboard', function () {
+        return 'heloo';
+    })->name('dashboard');
+});
 
 require __DIR__.'/auth.php';
